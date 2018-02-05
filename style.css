@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url("images/clear-sky.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    color: #d6fcfb;
+}
+
+table.table-city-name thead th, table.table-city-name th, table.table-city-name td{
+    border: 0px;
+}
+
+.city-inputs .form-control:focus {
+    color: #6f6f72;
+    background-color: #d6fcfb;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #b3b3b7;
+}
+
+.city-inputs .form-control {
+    color: #9f9fa0;
+    background-color: #d6fcfb;
+    border: 1px solid #ced4da;
+}
+
+.settings-block {
+    height: 40%;
+}
+
+.table-block {
+    overflow: auto;
+    height: 305px;
+}
+
+.weather-block {
+    text-align: center;
+}
+
+.temperature {
+    font-size: 200px;
+}
+
+.wind, .weather-description {
+    font-size: 40px;
+}
+
+.active-row {
+    background-color: rgba(0,0,0,.095);
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container {
+    position: absolute;
+    background: #d6fcfb;
+    color: #9f9fa0;
+    border-radius: 5px;
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    padding-left: 10px;
+    max-height: 310px;
+    overflow: auto;
+    min-width: 250px;
+}
+
+.buttons-block button:first-child {
+    margin-right: 15px;
+    margin-top: 1px;
+}
+
+.city-row .remove-icon {
+    cursor: pointer;
+    float: right;
+}
+
+
+@media (max-width: 1200px) {
+    .temperature {
+        font-size: 100px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .react-autosuggest__container .react-autosuggest__suggestions-container {
+        margin-top: 40px;
+    }
+
+    .buttons-block  {
+        text-align: center;
+    }
+}
